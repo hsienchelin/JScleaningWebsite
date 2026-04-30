@@ -24,7 +24,6 @@ export const NAV_LINKS = [
 ];
 
 export const BUSINESS_HOURS = [
-  { day: '週一至週五', time: '08:00 – 18:00' },
-  { day: '週六', time: '08:00 – 17:00' },
+  { day: '週一至週六', time: '09:00 – 17:30' },
   { day: '週日 / 國定假日', time: '依需求安排' },
 ];
