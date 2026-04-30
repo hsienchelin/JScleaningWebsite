@@ -18,6 +18,7 @@ import {
   MessageCircle,
 } from 'lucide-react';
 import SectionTitle from '../../components/common/SectionTitle';
+import { useSEO } from '../../hooks/useSEO';
 import { SERVICES } from '../../data/services';
 import { COMPANY } from '../../data/constants';
 
@@ -61,6 +62,11 @@ const REASONS = [
 ];
 
 export default function Home() {
+  useSEO({
+    title: '首頁',
+    description:
+      '哲欣有限公司｜20 年實務經驗，專營裝潢後細清、保護工程拆除、退租清潔。雙北、桃園、基隆、新竹服務，是設計師最可靠的後援團隊。',
+  });
   return (
     <div>
       {/* Hero */}

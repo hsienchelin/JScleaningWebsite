@@ -17,6 +17,7 @@ import {
 import SectionTitle from '../../components/common/SectionTitle';
 import { SERVICES } from '../../data/services';
 import { getServiceImage } from '../../utils/loadServiceImages';
+import { useSEO } from '../../hooks/useSEO';
 
 const iconMap: Record<string, React.ReactNode> = {
   sparkles: <Sparkles size={36} />,
@@ -39,6 +40,11 @@ const PROCESS = [
 ];
 
 export default function Services() {
+  useSEO({
+    title: '服務項目',
+    description:
+      '裝潢後細清、建材特殊處理、保護工程拆除、廢棄物清運、石材美容、環境消毒、洗地打蠟、地毯清潔、社區商辦清潔員派駐 — 一站式解決工程尾端需求。',
+  });
   const { hash } = useLocation();
 
   useEffect(() => {
