@@ -8,11 +8,18 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Cases from './pages/Cases';
 import Contact from './pages/Contact';
+import { useGoogleAnalytics } from './hooks/useGoogleAnalytics';
+
+function Analytics() {
+  useGoogleAnalytics();
+  return null;
+}
 
 export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <Analytics />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-1">
