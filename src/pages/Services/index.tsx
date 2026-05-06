@@ -105,7 +105,10 @@ export default function Services() {
                   <div className="relative rounded-3xl aspect-[4/3] overflow-hidden bg-slate-100">
                     <img
                       src={image}
-                      alt={`${service.title}（AI 生成示意圖）`}
+                      alt={`${service.title} - 哲欣專業裝潢後清潔服務示意圖`}
+                      width="800"
+                      height="600"
+                      loading="lazy"
                       className="w-full h-full object-cover"
                     />
                     <span className="absolute bottom-3 right-3 bg-black/60 text-white text-[11px] font-medium px-2.5 py-1 rounded-full backdrop-blur">

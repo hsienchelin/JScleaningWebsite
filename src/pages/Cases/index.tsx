@@ -46,7 +46,10 @@ function CaseCard({ entry }: { entry: CaseEntry }) {
           <div className="aspect-[4/3] bg-slate-100 flex items-center justify-center">
             <img
               src={after ?? before}
-              alt={entry.info.title ?? entry.caseId}
+              alt={`${entry.info.title ?? entry.caseId} - 哲欣裝潢後細清實績`}
+              width="800"
+              height="600"
+              loading="lazy"
               className="w-full h-full object-contain"
             />
           </div>

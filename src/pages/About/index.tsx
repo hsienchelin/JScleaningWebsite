@@ -100,7 +100,10 @@ export default function About() {
             <div className="bg-gradient-to-br from-[#EBF4FC] to-[#E0F5F2] rounded-3xl p-10 text-center">
               <img
                 src="/images/logo-mark.png"
-                alt="哲欣 Logo"
+                alt="哲欣有限公司品牌標誌 - 設計師指定的裝潢後細清團隊"
+                width="192"
+                height="192"
+                loading="lazy"
                 className="w-48 h-48 object-contain mx-auto mb-6"
               />
               <p className="text-slate-700 leading-relaxed">

@@ -71,12 +71,12 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-10" />
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-32">
           <span className="inline-block text-xs font-semibold tracking-widest text-[#6B8FC8] uppercase mb-6 bg-blue-50 px-4 py-1.5 rounded-full">
-            專業裝潢後細清 · 設計師指定合作
+            20 年實戰經驗 · 設計師指定合作
           </span>
           <h1 className="text-4xl md:text-6xl font-bold text-slate-800 leading-tight mb-6">
-            讓設計藍圖
+            專業<span className="gradient-text">裝潢後細清</span>
             <br />
-            <span className="gradient-text">完美交屋</span>
+            讓設計藍圖完美交屋
           </h1>
           <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed mb-10">
             {COMPANY.yearsOfExperience} 年實務經驗，從粗清到入厝等級。

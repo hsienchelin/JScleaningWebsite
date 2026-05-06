@@ -28,7 +28,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img src="/images/logo.png" alt="哲欣Logo" className="h-10 w-10 object-contain" />
+            <img
+              src="/images/logo.png"
+              alt="哲欣有限公司 - 專業裝潢後細清"
+              width="40"
+              height="40"
+              className="h-10 w-10 object-contain"
+            />
             <span className="font-bold text-lg text-slate-800">{COMPANY.name}</span>
           </Link>
 

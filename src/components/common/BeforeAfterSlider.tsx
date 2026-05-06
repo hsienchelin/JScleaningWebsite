@@ -61,7 +61,10 @@ export default function BeforeAfterSlider({
     >
       <img
         src={after}
-        alt={afterLabel}
+        alt={`${afterLabel} - 哲欣裝潢後細清成果`}
+        width="800"
+        height="600"
+        loading="lazy"
         className="absolute inset-0 w-full h-full object-contain pointer-events-none"
         draggable={false}
       />
@@ -71,7 +74,10 @@ export default function BeforeAfterSlider({
       >
         <img
           src={before}
-          alt={beforeLabel}
+          alt={`${beforeLabel} - 清潔前對照`}
+          width="800"
+          height="600"
+          loading="lazy"
           className="absolute inset-0 w-full h-full object-contain"
           draggable={false}
         />

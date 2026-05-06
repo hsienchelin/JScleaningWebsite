@@ -10,7 +10,14 @@ export default function Footer() {
           {/* Brand */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <img src="/images/logo.png" alt="哲欣Logo" className="h-10 w-10 object-contain" />
+              <img
+                src="/images/logo.png"
+                alt="哲欣有限公司 - 專業裝潢後細清"
+                width="40"
+                height="40"
+                loading="lazy"
+                className="h-10 w-10 object-contain"
+              />
               <div>
                 <p className="font-bold text-white text-lg leading-tight">{COMPANY.name}</p>
                 <p className="text-xs text-slate-400">{COMPANY.nameEn}</p>
