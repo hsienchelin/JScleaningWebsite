@@ -62,11 +62,7 @@ const REASONS = [
 ];
 
 export default function Home() {
-  useSEO({
-    title: '首頁',
-    description:
-      '哲欣有限公司｜20 年實務經驗，專營裝潢後初清、細清、洗地打蠟、環境消毒、清潔員派駐。雙北、桃園、基隆、新竹服務，是設計師最可靠的後援團隊。',
-  });
+  useSEO('/');
   return (
     <div>
       {/* Hero */}

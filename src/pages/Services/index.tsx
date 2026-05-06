@@ -40,11 +40,7 @@ const PROCESS = [
 ];
 
 export default function Services() {
-  useSEO({
-    title: '服務項目',
-    description:
-      '裝潢後細清、建材特殊處理、保護工程拆除、廢棄物清運、石材美容、環境消毒、洗地打蠟、地毯清潔、社區商辦清潔員派駐 — 一站式解決工程尾端需求。',
-  });
+  useSEO('/services');
   const { hash } = useLocation();
 
   useEffect(() => {

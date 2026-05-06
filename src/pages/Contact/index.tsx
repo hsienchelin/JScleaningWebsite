@@ -4,11 +4,7 @@ import { COMPANY, BUSINESS_HOURS } from '../../data/constants';
 import { useSEO } from '../../hooks/useSEO';
 
 export default function Contact() {
-  useSEO({
-    title: '聯絡我們',
-    description:
-      '哲欣有限公司｜電話 02-29983662、LINE 線上諮詢，新北市新莊區中港三街 15 號。歡迎預約場勘，提供裝潢後細清、退租清潔等專業服務。',
-  });
+  useSEO('/contact');
   const mapQuery = encodeURIComponent(COMPANY.address);
   const mapEmbedUrl = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
   const mapDirectionUrl = `https://www.google.com/maps/dir/?api=1&destination=${mapQuery}`;

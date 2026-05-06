@@ -102,11 +102,7 @@ function CaseCard({ entry }: { entry: CaseEntry }) {
 }
 
 export default function Cases() {
-  useSEO({
-    title: '案例分享',
-    description:
-      '哲欣歷年清潔實績｜豪宅別墅、老屋翻新、商辦大樓、退租還原前後對比，看見專業細清的真實成果。',
-  });
+  useSEO('/cases');
   const cases = useMemo(() => loadCases(), []);
   const categories = useMemo(() => {
     const ids = Array.from(new Set(cases.map((c) => c.serviceId)));

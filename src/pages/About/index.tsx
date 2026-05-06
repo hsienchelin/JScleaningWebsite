@@ -59,11 +59,7 @@ const VALUES = [
 ];
 
 export default function About() {
-  useSEO({
-    title: '公司簡介',
-    description:
-      '哲欣有限公司（民國 103 年設立）與佳翔企業社（民國 91 年開業）兩大品牌，深耕清潔產業 20 年以上，是設計師交屋前最可靠的後援。',
-  });
+  useSEO('/about');
   return (
     <div className="pt-16">
       {/* Header */}
