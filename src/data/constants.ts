@@ -20,6 +20,7 @@ export const NAV_LINKS = [
   { label: '公司簡介', href: '/about' },
   { label: '服務項目', href: '/services' },
   { label: '案例分享', href: '/cases' },
+  { label: '常見問題', href: '/faq' },
   { label: '聯絡我們', href: '/contact' },
 ];
 

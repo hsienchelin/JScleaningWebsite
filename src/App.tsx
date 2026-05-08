@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Cases from './pages/Cases';
+import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import { useGoogleAnalytics } from './hooks/useGoogleAnalytics';
 
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/cases" element={<Cases />} />
+            <Route path="/faq" element={<FAQ />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
