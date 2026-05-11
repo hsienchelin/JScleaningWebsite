@@ -74,12 +74,12 @@ export default function Home() {
             20 年實戰經驗 · 設計師指定合作
           </span>
           <h1 className="text-4xl md:text-6xl font-bold text-slate-800 leading-tight mb-6">
-            專業<span className="gradient-text">裝潢後細清</span>
+            雙北專業<span className="gradient-text">裝潢後細清</span>
             <br />
             讓設計藍圖完美交屋
           </h1>
           <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed mb-10">
-            {COMPANY.yearsOfExperience} 年實務經驗，從粗清到入厝等級。
+            新北新莊在地深耕 {COMPANY.yearsOfExperience} 年，服務雙北・桃園・基隆・新竹。
             <br className="hidden sm:block" />
             講得通、懂建材、收尾乾淨，是設計師交屋前最可靠的後援。
           </p>

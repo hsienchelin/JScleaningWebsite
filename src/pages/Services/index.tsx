@@ -13,6 +13,7 @@ import {
   Brush,
   Users,
   Clock,
+  MapPin,
 } from 'lucide-react';
 import SectionTitle from '../../components/common/SectionTitle';
 import { SERVICES } from '../../data/services';
@@ -181,6 +182,23 @@ export default function Services() {
               >
                 預約場勘 <ChevronRight size={14} />
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Area */}
+      <section className="pb-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-slate-50 border border-slate-100 rounded-2xl p-8 flex flex-col sm:flex-row items-start gap-5">
+            <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center text-white shrink-0">
+              <MapPin size={22} />
+            </div>
+            <div>
+              <h3 className="font-bold text-slate-800 text-lg mb-2">服務範圍</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                以<strong className="text-slate-800">新北市新莊區</strong>為核心，主要服務<strong className="text-slate-800">雙北地區（台北市、新北市）</strong>，並延伸至<strong className="text-slate-800">桃園市、基隆市、新竹市</strong>。新莊本地案件可即時排程，雙北以外地區依案場規模評估，超遠距離案件會誠實告知是否合適接案。
+              </p>
             </div>
           </div>
         </div>
