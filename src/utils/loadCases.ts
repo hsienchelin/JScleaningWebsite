@@ -16,6 +16,11 @@ export interface CaseEntry {
   after: string[];
 }
 
+export const CASE_SERVICE_LABELS: Record<string, string> = {
+  'detailed-cleaning': '裝潢細清',
+  'move-out': '退租清潔',
+};
+
 const infoFiles = import.meta.glob('../assets/cases/*/case-*/info.json', {
   eager: true,
 }) as Record<string, { default: CaseInfo }>;
@@ -66,7 +71,7 @@ export function loadCases(): CaseEntry[] {
     const service = SERVICES.find((s) => s.id === parsed.serviceId);
     entries.push({
       serviceId: parsed.serviceId,
-      serviceTitle: service?.title ?? parsed.serviceId,
+      serviceTitle: CASE_SERVICE_LABELS[parsed.serviceId] ?? service?.title ?? parsed.serviceId,
       caseId: parsed.caseId,
       info,
       before,

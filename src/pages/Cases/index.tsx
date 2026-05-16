@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ChevronRight, ChevronLeft, Camera } from 'lucide-react';
 import SectionTitle from '../../components/common/SectionTitle';
 import BeforeAfterSlider from '../../components/common/BeforeAfterSlider';
-import { loadCases, MOVE_OUT_SERVICE, type CaseEntry } from '../../utils/loadCases';
+import { loadCases, MOVE_OUT_SERVICE, CASE_SERVICE_LABELS, type CaseEntry } from '../../utils/loadCases';
 import { SERVICES } from '../../data/services';
 import { useSEO } from '../../hooks/useSEO';
 
@@ -26,6 +26,7 @@ const TESTIMONIALS = [
 ];
 
 function serviceTitle(id: string) {
+  if (CASE_SERVICE_LABELS[id]) return CASE_SERVICE_LABELS[id];
   if (id === MOVE_OUT_SERVICE.id) return MOVE_OUT_SERVICE.title;
   return SERVICES.find((s) => s.id === id)?.title ?? id;
 }
